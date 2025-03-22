@@ -139,7 +139,7 @@ a {
     width: 32px;
     height: 32px;
     transition: transform 0.3s ease;
-    pointer-events: none; 
+    /*pointer-events: none; */
     user-select: none;
 }
 
