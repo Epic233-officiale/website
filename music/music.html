@@ -45,6 +45,9 @@
       height: 150px;
       border-radius: 10px;
       margin-right: 20px;
+      pointer-events: none; /* Disable image interactions */
+      user-drag: none; /* Prevent image dragging */
+      -webkit-user-drag: none; /* Safari */
     }
 
     .card-content {
@@ -75,13 +78,26 @@
       color: #bb86fc;
       font-weight: bold;
     }
+
+    /* Disable text selection and image copy */
+    img {
+      user-select: none; /* Disable image selection */
+    }
+
+    body {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none; /* Disable text selection on the page */
+    }
+
   </style>
 </head>
 <body>
   <h2>Epic233 - Music Releases</h2>
 
   <div class="card">
-    <img src="https://epic233.org/music/images/Music/lets-play.jpg" alt="Let's Play">
+    <img src="https://epic233.org/music/images/Music/lets-play.jpg" alt="Let's Play" draggable="false" oncontextmenu="return false;">
     <div class="card-content">
       <h3>Let's Play</h3>
       <p>My first album ever.</p>
@@ -90,7 +106,7 @@
   </div>
 
   <div class="card">
-    <img src="https://epic233.org/music/images/Music/touhou-riddim.png" alt="Touhou Riddim">
+    <img src="https://epic233.org/music/images/Music/touhou-riddim.png" alt="Touhou Riddim" draggable="false" oncontextmenu="return false;">
     <div class="card-content">
       <h3>Touhou Riddim (FLIP)</h3>
       <p>A flip of Virtual Riot's song with even more Touhou flavor.</p>
@@ -101,7 +117,7 @@
   </div>
 
   <div class="card">
-    <img src="https://epic233.org/music/images/Music/polardiavolan.png" alt="Chaos' End">
+    <img src="https://epic233.org/music/images/Music/polardiavolan.png" alt="Chaos' End" draggable="false" oncontextmenu="return false;">
     <div class="card-content">
       <h3>Polardiavolan for the Arrhythmia</h3>
       <p>A song for Undertale Fangame "Chaos' End" in Undertale Spring Festival Stream 2024.</p>
@@ -111,7 +127,7 @@
   </div>
 
   <div class="card">
-    <img src="https://epic233.org/music/images/Music/eof.png" alt="eof">
+    <img src="https://epic233.org/music/images/Music/eof.png" alt="eof" draggable="false" oncontextmenu="return false;">
     <div class="card-content">
       <h3>END_OF_FILE</h3>
       <p>A collab with Alyxium on a glitchy track about Fatal Error Sans from Underverse.</p>
