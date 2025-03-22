@@ -12,6 +12,10 @@
 }
 
 body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     font-family: 'THBiolinum', sans-serif;
     background-color: #121212;
     /* Dark theme background */
@@ -28,6 +32,10 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
+}
+
+img{
+    user-select: none;
 }
 
 .intro {
@@ -47,6 +55,7 @@ body {
 .album-img {
     max-width: 100%;
     height: auto;
+    pointer-events: none; 
 }
 
 .watermark {
